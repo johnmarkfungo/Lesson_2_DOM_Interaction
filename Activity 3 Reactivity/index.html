@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Reactivity Problem</title>
+</head>
+<body>
+    <header><h1>Reactivity in Action</h1></header>
+    <section id="container">
+        <button @click="addFive(5)">Add 5</button>
+        <button @click="addOne(1)">Add 1</button>
+
+        <p>Result: {{result}}</p>
+    </section>
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

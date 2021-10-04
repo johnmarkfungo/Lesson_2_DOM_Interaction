@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Events</title>
+</head>
+
+<body>
+    <header>
+        <h1>Events</h1>
+    </header>
+    <section class="container" id="events">
+        <p class="h2">Events Practice</p>
+        <button @click="showAlert">Show Alert</button><br>
+        <input type="text" v-on:keydown="setOutput1">
+        <p class="output">
+            OUTPUT: {{ output1 }}
+        </p>
+        <input type="text" v-on:keyup.enter="setOutput2">
+        <p class="output">
+            OUTPUT: {{ output2 }}
+        </p>
+
+    </section>
+
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
