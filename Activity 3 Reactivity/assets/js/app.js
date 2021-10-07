@@ -28,7 +28,6 @@ new Vue ({
           }else {
               return 'Not There Yet!'
           }
-          return this.value
       }
   },
 })
