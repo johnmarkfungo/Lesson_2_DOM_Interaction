@@ -15,10 +15,7 @@ new Vue ({
       }
   },
   methods: {
-      addFive(num){
-          this.value = this.value+num
-      },
-      addOne(num){
+      add(num){
           this.value = this.value+num
       },
   },
