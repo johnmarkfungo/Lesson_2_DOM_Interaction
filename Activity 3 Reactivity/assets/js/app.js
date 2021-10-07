@@ -1,12 +1,11 @@
 new Vue ({
   el:'#container',
   data: {
-      time: 0,
       value: 0,
   },
   watch: {
-      value: function(time) {
-          if (time >= 37){
+      value: function(valLimit) {
+          if (valLimit >= 37){
               const vueInstance = this
               setTimeout(function() {
                   vueInstance.value = 0
